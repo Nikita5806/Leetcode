@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>searchig algo </h1>
+    <input type="text" id="search" placeholder="enter value">
+    <button onclick = searchPos()> search</button>
+   <script>
+    function searchPos(){
+    let data=[44,5,43,5,2,3,45,];
+    let item = document.getElementById('search').value;
+    let position=undefined;
+    for( i=0; i<=data.length; i++){
+        if(data[i]==item ){
+            index = i;
+        }
+    }
+    console.warn(index);
+}
+   </script> 
+</body>
+</html>
