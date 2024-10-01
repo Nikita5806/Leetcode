@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>merge 2 array</h1>
+    <script>
+        let data1 = [2222, 33, 4, 5, 6, 7];
+        let data2 = [44.455, 66];
+        let data3 = [];
+        let d1 = 0;
+        let d2 = 0;
+        let d3 = 0;
+        while (d1 < data1.length && d2 < data2.length) {
+            if (data1[d1] < data2[d2])
+             {
+                data3[d3] = data1[d1];
+                d1++;
+                console.log(data3);
+
+
+            } else {
+                data3[d3] = data2[d2]
+                d2++;
+                console.log(data3);
+
+            }
+            d3++;
+        }
+        console.log(data3);
+    </script>
+
+</body>
+
+</html>
